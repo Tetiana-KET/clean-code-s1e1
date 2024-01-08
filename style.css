@@ -13,7 +13,7 @@ body {
 .what-is-important img {
   width: 100%;
 }
-.what-is-important .more-inf {
+.what-is-important .more-info {
   font-family: fantasy, cursive;
 }
 
@@ -21,7 +21,7 @@ body {
 .what-is-important { text-align: center;
 }
 }
-.centered-main-page-element {
+.main-content-wrap {
   display: block;
   width: 500px;
   margin: 0 auto 0;
