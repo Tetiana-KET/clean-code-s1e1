@@ -18,8 +18,9 @@
 }
 
 @media (max-width:768px) {
-.what-is-important { text-align: center;
-}
+	.what-is-important { 
+		text-align: center;
+	}
 }
 .main-content-wrap {
   display: block;
