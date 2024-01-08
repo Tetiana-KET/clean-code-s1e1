@@ -15,7 +15,7 @@ var completedTasksHolder = document.getElementById('completed-tasks');//complete
 
 
 //New task list item
-var createNewTaskElement = function(taskString) {
+var createNewTaskElement = function (taskString) {
 
     var listItem = document.createElement('li');
 
@@ -59,7 +59,7 @@ var createNewTaskElement = function(taskString) {
 
 
 
-var addTask = function() {
+var addTask = function () {
     console.log('Add Task...');
     //Create a new list item with the text from the #new-task:
     if (!taskInput.value) return;
@@ -75,7 +75,7 @@ var addTask = function() {
 
 //Edit an existing task.
 
-var editTask = function() {
+var editTask = function () {
     console.log('Edit Task...');
     console.log(`Change 'edit' to 'save'`);
 
@@ -104,7 +104,7 @@ var editTask = function() {
 
 
 //Delete task.
-var deleteTask = function() {
+var deleteTask = function () {
     console.log('Delete Task...');
 
     var listItem = this.parentNode;
@@ -116,7 +116,7 @@ var deleteTask = function() {
 
 
 //Mark task completed
-var taskCompleted = function() {
+var taskCompleted = function () {
     console.log('Complete Task...');
 
     //Append the task list item to the #completed-tasks
@@ -127,7 +127,7 @@ var taskCompleted = function() {
 };
 
 
-var taskIncomplete = function() {
+var taskIncomplete = function () {
     console.log('Incomplete Task...');
 //Mark task as incomplete.
     //When the checkbox is unchecked
@@ -139,7 +139,7 @@ var taskIncomplete = function() {
 
 
 
-var ajaxRequest = function() {
+var ajaxRequest = function () {
     console.log('AJAX Request');
 };
 
@@ -152,7 +152,7 @@ addButton.addEventListener('click', addTask);
 addButton.addEventListener('click', ajaxRequest);
 
 
-var bindTaskEvents = function(taskListItem, checkBoxEventHandler) {
+var bindTaskEvents = function (taskListItem, checkBoxEventHandler) {
     console.log('bind list item events');
 //select ListItems children
     var checkBox = taskListItem.querySelector('input[type=checkbox]');
